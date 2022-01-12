@@ -1,27 +1,27 @@
 import React from "react";
 import { Text, HStack, Button } from "native-base";
 
-export default function BtnRowComp(props) {
+export default function BtnRowComp({ first, second, third, fourth }) {
   return (
     <HStack my="1">
-      <Button bg={props.first.color} size="20" mx="1" onPress={() => props.first.func(props.first.num)}>
+      <Button bg={first.color} size="20" mx="1" onPress={() => first.func(first.num)}>
         <Text fontSize="3xl" color="white">
-          {props.first.num}
+          {first.num}
         </Text>
       </Button>
-      <Button bg={props.second.color} size="20" mx="1" onPress={() => props.second.func(props.second.num)}>
+      <Button bg={second.color} size="20" mx="1" onPress={() => second.func(second.num)}>
         <Text fontSize="3xl" color="white">
-          {props.second.num}
+          {second.num}
         </Text>
       </Button>
-      <Button bg={props.third.color} size="20" mx="1" onPress={() => props.third.func(props.third.num)}>
+      <Button bg={third.color} size="20" mx="1" onPress={() => third.func(third.num)}>
         <Text fontSize="3xl" color="white">
-          {props.third.num}
+          {third.num}
         </Text>
       </Button>
-      <Button bg={props.fourth.color} size="20" mx="1" onPress={() => props.fourth.func(props.fourth.num)}>
+      <Button bg={fourth.color} size="20" mx="1" onPress={() => fourth.func(fourth.num)}>
         <Text fontSize="3xl" color="white">
-          {props.fourth.num}
+          {fourth.num}
         </Text>
       </Button>
     </HStack>

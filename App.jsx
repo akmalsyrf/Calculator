@@ -13,17 +13,11 @@ export default function App() {
   function checkOperator(tested) {
     switch (tested) {
       case "+":
-        return true;
       case "-":
-        return true;
       case "*":
-        return true;
       case "/":
-        return true;
       case "%":
-        return true;
       case "x²":
-        return true;
       case "π":
         return true;
       default:
